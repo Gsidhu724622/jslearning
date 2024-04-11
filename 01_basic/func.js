@@ -90,7 +90,7 @@ function calculateCartPrice(val1, val2, ...num1){
 // OUTPUT sidhu is username & undefined is the price  gets undefinded thats why we use typescript to check such things that these are present in object or not
 
 function objectHandle(anyobject){
-    console.log(`${anyobject.username} is username & ${anyobject.price} is the price`);
+    // console.log(`${anyobject.username} is username & ${anyobject.price} is the price`);
 }
 
 objectHandle({
@@ -121,16 +121,29 @@ if(true){
     let a = 100
     const b = 20
     var c = 30
-    console.log(a);
+    // console.log(a);
 }
 
 // console.log(a);
 // console.log(b);
-console.log(c); // thats why we do not use var because OUTPUT 30 EVEN Value in block scope
+// console.log(c); // thats why we do not use var because OUTPUT 30 EVEN Value in block scope
 
 
 // when we check the global scope in browser inspect than it is different then the node scope
 
 // {} this is scope 
+
+
+//Child function can use parent variable
+
+function addone(num){
+    return num +1
+}
+addone(5)
+
+const addTwo = function(num){
+    return num +2
+}
+addTwo(5)
 
 

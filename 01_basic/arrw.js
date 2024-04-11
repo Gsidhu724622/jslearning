@@ -39,6 +39,13 @@ const addTwo = (num1, num2) => ({username : "sidhu"})
 //,,,,,,,,,,,,,,, Immediately Invoked Function Expressions (IIFE),,,,,,,,,,,,,,,,//
 // Interview Jo funtion immediately execute ho jaye iska hm use krte h global scope ke pollution se problem hoti h kayi baat uske jo be varibles or decleartion h us se bchne ke liye hm IIFE use krte hai
 
-(function chai(){
-    console.log("DB CONNECTED");
-})()
+// (function chai(){
+//     console.log("DB CONNECTED");
+// })();
+
+// ( ()=> {
+//     console.log("DB CONNECTED");
+// } )()
+( (name)=> {
+    console.log(`DB CONNECTED ${name}`);
+} )("sidhu")

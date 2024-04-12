@@ -31,6 +31,7 @@ const user = {
 
 // implicit return  remove curly bases  and remove return hum parathinsis me add kr be skte h or nhi be
 
+
 // const addTwo = (num1, num2) => (num1 + num2)
 const addTwo = (num1, num2) => ({username : "sidhu"})
 // console.log(addTwo(3,4));

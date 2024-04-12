@@ -6,11 +6,11 @@
 //     }
 // }
 
-const myObject = {
-    js : "Javascript",
-    cpp : "c++",
-    rb : "ruby",
-}
+// const myObject = {
+//     js : "Javascript",
+//     cpp : "c++",
+//     rb : "ruby",
+// }
 
 // for (const key in myObject) {
 //     console.log(`${key} shortcut is for ${myObject[key]}`);    
@@ -19,16 +19,16 @@ const myObject = {
 
 
 // for in me array ki keys print hoti h by default arry ki jo keys h wo number h zero se start hoti h isiliyye object bnaye h ki hm aapni mazi ki key add kr skte h
-const programming = ["js", "rb", "py", "java", "cpp"]
-for (const key in programming) {
-    // console.log(programming[key]);
-}
+// const programming = ["js", "rb", "py", "java", "cpp"]
+// for (const key in programming) {
+//     console.log(programming[key]);
+// }
 
 // for in se map pe iteration nhi ho skta
 
 
 // Foreach Loop.......................MOST USED IN ARRY
-const coding = ["js", "rb", "py", "java", "cpp","c"]
+// const coding = ["js", "rb", "py", "java", "cpp","c"]
 // coding.forEach( function (item){
 //     console.log(item);
 // } )
@@ -50,24 +50,36 @@ const coding = ["js", "rb", "py", "java", "cpp","c"]
 // coding.forEach((item, index, arr)=>{
 //     console.log(item, index, arr);
 // })
-const myCode = [
-    {
-        langName: "Javascript",
-        langFileName: "js"
+// const myCode = [
+//     {
+//         langName: "Javascript",
+//         langFileName: "js"
 
-    },
-    {
-        langName: "Java",
-        langFileName: "java"
+//     },
+//     {
+//         langName: "Java",
+//         langFileName: "java"
 
-    },
-    {
-        langName: "Python",
-        langFileName: "py"
+//     },
+//     {
+//         langName: "Python",
+//         langFileName: "py"
 
-    },
-]
+//     },
+// ]
 
-myCode.forEach((item)=>{
-    console.log(item.langName);
-})
+// myCode.forEach((item)=>{
+//     console.log(item.langName);
+// })
+
+// const value = coding.forEach((item)=>{
+//     console.log(item);
+// })
+// console.log(value);
+
+// variable me jab hm value ko store krte h to undefined aayegi
+
+const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNums = myNum.filter((num)=> num>4)
+console.log(newNums);

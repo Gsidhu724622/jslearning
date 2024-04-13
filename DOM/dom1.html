@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM LEARING</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    
+</body>
+<script>
+    const parant = document.querySelector(".parent")
+    //console.log(parant);
+   // console.log(parant.children); // abhi hume html collection mila h children se
+    //console.log(parant.children[1].innerHTML);
+    // for (let i = 0; i < parant.children.length; i++) {
+    //     console.log(parant.children[i].innerHTML);
+        
+    // }
+    parant.children[1].style.color = "Orange"
+    // console.log(parant.firstElementChild);
+    // console.log(parant.lastElementChild);
+    const dayOne = document.querySelector(".day")
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+    console.log("Nodes ", parant.childNodes);
+
+    //isme jo value aayi h wo nodelist ko count kare to wo 9 aayi h but hum smj rhe the ki 4 hi aayegi monday to thurday but its a complex tree structure jab be hum enter krke next line me aate h to browser use be text node consider krta h ak line ke baad jitni be line aa jaye wo render nhi hoti but agr comment de diya to wo count hoga or 
+
+
+</script>
+</html>

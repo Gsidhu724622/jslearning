@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`
+        document.querySelector(".language").appendChild(li)
+        // document.appendChild(".language")       
+    }
+    addLanguage("Ruby")
+    addLanguage("Python")
+    addLanguage("Java")
+    // console.log(addLanguage);
+    // uper wale function me kya ho rha h ki jab be koi li add ho rha h to hme pura ka pura dom tree traverse krna pad rha h to us se thoda relief ke liye hm DSA optimised route le skte h neche function ke according
+
+    function addOptiLang(langName) {
+        const li = document.createElement("li") 
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)       
+    }
+    addOptiLang("golang")
+
+
+    // Edit Value
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+    const newLi = document.createElement("li")
+    newLi.textContent ="Mojo"
+    secondLang.replaceWith(newLi)
+
+    //edit
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = "<li>TypeScript</li>"
+
+
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
